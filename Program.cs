@@ -31,7 +31,7 @@ namespace taskproject
             Console.WriteLine("FileExtension: "+f2);
 
             //count of words from text file
-              int wordcount = 1;
+              int wordcount = 0;
               for (int i=0; i < file.Length; i++)
               {
                   if (file[i]==' ')
