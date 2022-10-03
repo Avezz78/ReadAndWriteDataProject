@@ -31,7 +31,7 @@ namespace taskproject
             Console.WriteLine("FileExtension: "+f2);
 
             //count of words from text file
-              int wordcount = 0;
+             /* int wordcount = 0;
               for (int i=0; i < file.Length; i++)
               {
                   if (file[i]==' ')
@@ -39,7 +39,19 @@ namespace taskproject
                       wordcount++;
                   }
               }
-              Console.WriteLine("total words in a textfile : "+wordcount);
+              Console.WriteLine("total words in a textfile : "+wordcount); */
+            
+            string[] Wcount = file.Split(' '); 
+            int wordCount = 0;
+            foreach (string str in Wcount)
+            {
+                if (str != string.Empty)
+                {
+                    wordCount++;
+                }
+            }
+            Console.WriteLine("\n count of word from text file : " + wordCount);
+            Console.ReadLine();
 
             // delete file
             //File.Delete(@"C:\Users\91720\Desktop\project4\sample.txtfile.txt");
